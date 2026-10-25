@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muhammad Waqas Raza — Senior Visual Designer specializing in brand identity, logo design and packaging.">
+  <title>Waqas Raza — Visual Designer</title>
+  <style>
+    :root {
+      --bg: #101010;
+      --text: #f4f2ee;
+      --muted: #999;
+      --line: #383838;
+      --accent: #d8ff65;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 90%; max-width: 1400px; margin: auto; }
+    header {
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: -2px; }
+    nav { display: flex; gap: 25px; font-size: 13px; }
+    .hero { padding: 115px 0 95px; }
+    .eyebrow { color: var(--accent); font-size: 12px; letter-spacing: 2px; }
+    h1 {
+      font-size: clamp(55px, 9vw, 145px);
+      letter-spacing: -.075em;
+      line-height: .98;
+      max-width: 1200px;
+      margin: 30px 0;
+    }
+    .hero-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 950px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    section { padding: 85px 0; border-top: 1px solid var(--line); }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+    h2 { font-size: clamp(30px, 5vw, 60px); letter-spacing: -.05em; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .project { display: block; }
+    .project-art {
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #2b312d, #8c9c81);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: clamp(25px, 5vw, 65px);
+      font-weight: 800;
+      letter-spacing: -.06em;
+    }
+    .project:nth-child(2) .project-art { background: linear-gradient(135deg,#594e47,#d5bda6); }
+    .project:nth-child(3) .project-art { background: linear-gradient(135deg,#243653,#738bb2); }
+    .project:nth-child(4) .project-art { background: linear-gradient(135deg,#533e54,#c3a4bf); }
+    .project h3 { font-size: 21px; margin-bottom: 4px; }
+    .project p, .about p { color: var(--muted); line-height: 1.8; }
+    .about { max-width: 850px; }
+    .contact h2 { font-size: clamp(45px, 8vw, 110px); }
+    .contact a { border-bottom: 2px solid var(--accent); }
+    footer {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+    @media(max-width: 700px) {
+      nav { gap: 12px; }
+      .hero { padding: 85px 0; }
+      .hero-bottom { flex-direction: column; }
+      .grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">WR<span style="color:var(--accent)">.</span></a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="eyebrow">INDEPENDENT CREATIVE PORTFOLIO — KARACHI, PAKISTAN</div>
+        <h1>Design with<br>purpose<span style="color:var(--accent)">.</span></h1>
+        <div class="hero-bottom">
+          <p>Muhammad Waqas Raza<br>Senior Visual Designer</p>
+          <p>Creating distinctive brand identities, compelling packaging and meaningful visual experiences.</p>
+        </div>
+      </div>
+
+      <section id="work">
+        <div class="section-head">
+          <h2>Selected Work</h2>
+          <span class="eyebrow">01 / PORTFOLIO</span>
+        </div>
+        <div class="grid">
+          <article class="project">
+            <div class="project-art">IDENTITY.</div>
+            <h3>Brand Identity</h3>
+            <p>Visual identity systems / Logo design</p>
+          </article>
+          <article class="project">
+            <div class="project-art">PACKAGING.</div>
+            <h3>Packaging Design</h3>
+            <p>Product packaging / Label design</p>
+          </article>
+          <article class="project">
+            <div class="project-art">CREATIVE.</div>
+            <h3>Advertising & Campaigns</h3>
+            <p>Digital campaigns / Visual direction</p>
+          </article>
+          <article class="project">
+            <div class="project-art">DESIGN.</div>
+            <h3>Selected Experiments</h3>
+            <p>Creative exploration / Concepts</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about">
+          <div class="eyebrow">02 / ABOUT</div>
+          <h2>Behind the work.</h2>
+          <p>I'm Muhammad Waqas Raza, a Senior Visual Designer based in Karachi, Pakistan. I specialize in building memorable visual identities, designing impactful packaging and translating ideas into compelling creative work.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="eyebrow">03 / CONTACT</div>
+        <h2>Let's create<br>something great.</h2>
+        <p>For collaborations and project inquiries, connect with me through my professional portfolio.</p>
+        <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Explore Behance</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Muhammad Waqas Raza</span>
+      <span>Designed with purpose.</span>
+    </footer>
+  </div>
+</body>
+</html>
